@@ -11,7 +11,7 @@ descrizione: >-
 # Indirizzo pubblico del sito, senza barra finale.
 # Serve per la mappa del sito (sitemap.xml) e per le anteprime sui social.
 # Esempi: https://www.storiadelgcc.it  oppure  https://tuonome.github.io/enciclopedia-tcg
-indirizzo: https://www.storiadelgcc.it
+indirizzo: https://gabriel9110.github.io/enciclopedia-tcg
 
 # Testo in fondo a ogni pagina.
 pie_di_pagina: >-
