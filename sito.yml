@@ -1,0 +1,30 @@
+# Impostazioni generali del sito.
+# Dopo ogni modifica il sito si rigenera da solo (vedi LEGGIMI.md).
+
+titolo: Enciclopedia del TCG
+descrizione: >-
+  Enciclopedia in italiano del gioco di carte collezionabili Pokémon:
+  set per set, mazzo per mazzo, dal Set Base del 1999 ai Mondiali del 2006.
+
+# Indirizzo pubblico del sito, senza barra finale.
+# Serve per la mappa del sito (sitemap.xml) e per le anteprime sui social.
+# Esempi: https://archiviogcc.it  oppure  https://tuonome.github.io/enciclopedia-tcg
+indirizzo: https://gabriel9110.github.io/enciclopedia-tcg
+
+# Testo in fondo a ogni pagina.
+pie_di_pagina: >-
+  Passa il mouse sul nome di una carta (o toccalo su telefono) per vederne l'anteprima.
+  Testi e analisi in italiano a cura dell'autore dei manuali.
+  Dati e immagini delle carte da <a href="https://github.com/PokemonTCG/pokemon-tcg-data" target="_blank" rel="noopener">pokemon-tcg-data</a>;
+  liste e risultati dalle fonti indicate in fondo a ogni pagina.
+  Pokémon e i nomi delle carte sono marchi dei rispettivi proprietari; questo è un progetto amatoriale non ufficiale.
+
+# I set in ordine di uscita. Serve a scegliere la versione giusta di una carta
+# quando ne esistono ristampe. Per un set nuovo aggiungi qui il suo codice
+# (lo trovi su https://github.com/PokemonTCG/pokemon-tcg-data/tree/master/cards/en):
+# il file delle carte viene scaricato da solo alla prima generazione.
+set_in_ordine: [base1, base2, base3, base4, base5, gym1, gym2, neo1, neo2, neo3, neo4, base6,
+  ecard1, ecard2, ecard3, ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13]
+
+# Nomi di carta da NON trasformare in anteprima (troppo comuni nel testo).
+non_collegare: [Unown, Potion, Switch]

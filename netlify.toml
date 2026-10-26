@@ -1,0 +1,6 @@
+# Usato solo se pubblichi con Netlify invece che con GitHub Pages.
+[build]
+  command = "pip install -r requirements.txt && python motore/build.py"
+  publish = "dist"
+[build.environment]
+  PYTHON_VERSION = "3.12"

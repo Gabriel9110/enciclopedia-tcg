@@ -1,0 +1,201 @@
+# Contenuti della pagina iniziale. Il testo può contenere semplice HTML (<b>, <br>).
+apertura:
+  occhiello: La storia del gioco di carte Pokémon, dal 1999 al 2006
+  titolo: Enciclopedia<br>del TCG
+  testo: 'Come è cambiato il modo di giocare dal Set Base del 1999 ai Mondiali del 2006: set per set, mazzo per mazzo, con le liste dei tornei e la scheda di ogni carta.'
+  inizio: '1999'
+  fine: '2006'
+in_evidenza:
+  etichetta: Nuovo
+  titolo: I mazzi iconici, dal 1999 al 2006
+  testo: '{n} schede: come funziona ogni mazzo, la lista spiegata, i punti deboli, i matchup e le varianti.'
+  pagina: mazzi
+costanti:
+- '<b>La pescata decide quasi tutto.</b> Professor Oak nel 1999, Professor Elm nel 2001, Copycat nel 2002, Steven''s Advice e Rocket''s Admin. nell''era EX: ogni era ha la sua carta di pesca dominante.'
+- '<b>Proteggere i primi turni.</b> I Baby della serie Neo, Dunsparce e Rare Candy nell''era EX: le Fase 2 vincono solo se arrivano in campo.'
+- '<b>Il controllo cambia forma.</b> Energy Removal, Dark Vileplume, Noc Lock, Desert Ruins, Battle Frontier, Disconnect: il gioco premia chi toglie opzioni all''avversario.'
+sottotitolo_ere: Otto formati, otto modi di vincere. Ogni era rimanda all'analisi completa.
+nota_campioni: I primi Campionati del Mondo del gioco di carte si giocano nel 2004.
+volumi:
+- volume: 1
+  nome: Volume I
+  titolo: La prima generazione
+  anni: 1999–2000
+  colore: '#a3242b'
+  prima_pagina: vol1
+- volume: 2
+  nome: Volume II
+  titolo: L'era Neo e la prima rotazione
+  anni: 2001–2002
+  colore: '#1f3f7a'
+  prima_pagina: vol2
+- volume: 3
+  nome: Volume III
+  titolo: L'era e-Card e la fine di Wizards
+  anni: 2002–2003
+  colore: '#0f5a50'
+  prima_pagina: vol3
+- volume: 4
+  nome: Volume IV
+  titolo: L'era EX e The Pokémon Company
+  anni: 2003–2006
+  colore: '#5b2a6e'
+  prima_pagina: vol4-1
+parti_volume_4:
+  1:
+    nome: Parte 1
+    titolo: La stagione 2003–04
+  2:
+    nome: Parte 2
+    titolo: La stagione 2004–05
+  3:
+    nome: Parte 3
+    titolo: La stagione 2005–06
+ere:
+- anni: '1999'
+  periodo: gen – giu 1999
+  formato: Formato Set Base
+  titolo: Aggressivo e di disturbo
+  testo: Pokémon Base veloci, Professor Oak e Computer Search. Si vince al secondo o terzo turno.
+  mazzi:
+  - Haymaker
+  - Rain Dance
+  - Damage Swap
+  pagina: meta-1999
+  colore: '#d63c34'
+  peso: 0.5
+- anni: 1999–2000
+  periodo: giu 1999 – apr 2000
+  formato: Base · Jungle · Fossil
+  titolo: Più Pokémon, primi blocchi
+  testo: Jungle allarga la scelta degli attaccanti, Fossil porta i Pokémon Power che bloccano l'avversario.
+  mazzi:
+  - Haymaker con Scyther
+  - Wigglytuff
+  - Fossilized Rain Dance
+  - Aerodactyl lock
+  pagina: mazzi-1999
+  colore: '#a8742b'
+  peso: 0.85
+- anni: '2000'
+  periodo: apr – dic 2000
+  formato: Unlimited con Team Rocket e Gym
+  titolo: Il controllo diventa un mazzo
+  testo: 'I Dark Pokémon e i Capipalestra aggiungono disturbo: si vince togliendo opzioni all''avversario.'
+  mazzi:
+  - Dark Vileplume lock
+  - Rocket's Zapdos
+  - Chaos Gym
+  pagina: mazzi-1999
+  colore: '#4b2e6b'
+  peso: 0.7
+- anni: 2001–02
+  periodo: 2001 – 2002
+  formato: Modified «Rocket-on»
+  titolo: Evoluzioni e controllo
+  testo: 'Prima rotazione: senza Haymaker si costruiscono Fase 2 con Pokémon Power, protette da Cleffa e Focus Band.'
+  mazzi:
+  - Feraligatr
+  - Typhlosion
+  - Steelix
+  - Dark Gengar
+  - Call Back
+  pagina: meta-2001
+  colore: '#1f3f7a'
+  peso: 1
+- anni: 2002–03
+  periodo: 2002 – 2003
+  formato: Modified «Neo-on»
+  titolo: Transizione
+  testo: 'Carte Neo, regole e supporto e-Card: arrivano le carte Aiuto, una per turno.'
+  mazzi:
+  - Entei / Magcargo
+  - Meganium / Exeggutor
+  - Noc Lock
+  - SMF
+  pagina: meta-2002
+  colore: '#0f5a50'
+  peso: 1
+- anni: 2003–04
+  periodo: ott 2003 – set 2004
+  formato: Modified «Expedition-on»
+  titolo: Consistenza e motori
+  testo: 'Dunsparce, Rare Candy e tre Aiuti di pesca: vince il mazzo più regolare. Il campione del mondo non gioca Pokémon-ex.'
+  mazzi:
+  - Team Magma (campione)
+  - Blaziken
+  - Gardevoir
+  - Walrein
+  pagina: bilancio-2003
+  colore: '#b3132f'
+  peso: 1
+- anni: 2004–05
+  periodo: set 2004 – ago 2005
+  formato: Modified «RS-on»
+  titolo: Motori universali e Premi
+  testo: 'Pidgeot, Celio''s Network e Rocket''s Admin.: si cerca qualsiasi carta e si gioca sul conto dei Premi.'
+  mazzi:
+  - Queendom (campione)
+  - PowTar
+  - Dark Tyranitar
+  - Medicham ex
+  pagina: bilancio-2004
+  colore: '#c0521c'
+  peso: 1
+- anni: 2005–06
+  periodo: set 2005 – ago 2006
+  formato: Modified «HL-on»
+  titolo: Motori contro blocchi
+  testo: Pokémon δ e carte Holon; vincono i mazzi che spengono i motori avversari.
+  mazzi:
+  - Mewtrick (campione)
+  - Eeveelutions
+  - LBS
+  - Lunarock
+  pagina: bilancio-2005
+  colore: '#4b3c9e'
+  peso: 1
+campioni:
+- anno: '2004'
+  sede: Orlando (Florida)
+  mazzo: Team Magma
+  giocatore: Yamato (Giappone)
+  pokemon_ex: Nessuno
+  pagina: ex-team-magma-aqua
+- anno: '2005'
+  sede: San Diego (California)
+  mazzo: Queendom (Nidoqueen / Pidgeot)
+  giocatore: Jeremy Maron (USA)
+  pokemon_ex: Nessuno
+  pagina: ex-firered-leafgreen
+- anno: '2006'
+  sede: Anaheim (California)
+  mazzo: Mewtrick (Mew ex / Manectric ex)
+  giocatore: Jason Klaczynski (USA)
+  pokemon_ex: Mew ex, Manectric ex, Deoxys ex
+  pagina: ex-legend-maker
+pdf:
+- file: Vol1_Prima_generazione
+  volume: Volume I
+  titolo: La prima generazione · 1999–2000
+  pagine: 84
+- file: Vol2_Era_Neo
+  volume: Volume II
+  titolo: L'era Neo e la prima rotazione · 2001–2002
+  pagine: 52
+- file: Vol3_Era_eCard
+  volume: Volume III
+  titolo: L'era e-Card e la fine di Wizards · 2002–2003
+  pagine: 49
+- file: Vol4_Parte1_EX_2003-04
+  volume: Volume IV · Parte 1
+  titolo: La stagione 2003–04
+  pagine: 58
+- file: Vol4_Parte2_EX_2004-05
+  volume: Volume IV · Parte 2
+  titolo: La stagione 2004–05
+  pagine: 54
+- file: Vol4_Parte3_EX_2005-06
+  volume: Volume IV · Parte 3
+  titolo: La stagione 2005–06
+  pagine: 54

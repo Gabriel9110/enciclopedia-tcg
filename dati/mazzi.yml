@@ -1,0 +1,90 @@
+formati:
+  f1:
+    nome: Set Base
+    periodo: gennaio – giugno 1999
+    colore: '#d63c34'
+    pagina: mazzi-1999
+    set_carte: base1
+  f2:
+    nome: Base-Jungle
+    periodo: giugno – ottobre 1999
+    colore: '#3f8f45'
+    pagina: mazzi-1999
+    set_carte: base2
+  f3:
+    nome: Base-Jungle-Fossil
+    periodo: ottobre 1999 – aprile 2000
+    colore: '#a8742b'
+    pagina: mazzi-1999
+    set_carte: base3
+  f4:
+    nome: Unlimited con Team Rocket e Gym
+    periodo: aprile – dicembre 2000
+    colore: '#4b2e6b'
+    pagina: mazzi-1999
+    set_carte: gym2
+  f5:
+    nome: Modified 2001–02 «Rocket-on»
+    periodo: 2001 – 2002
+    colore: '#1f3f7a'
+    pagina: mazzi-2001
+    set_carte: neo4
+  f6:
+    nome: Modified 2002–03 «Neo-on»
+    periodo: 2002 – 2003
+    colore: '#0f5a50'
+    pagina: meta-2002
+    set_carte: ecard3
+  f7:
+    nome: Modified 2003–04 «Expedition-on»
+    periodo: ottobre 2003 – settembre 2004
+    colore: '#b3132f'
+    pagina: bilancio-2003
+    set_carte: ex5
+  f8:
+    nome: Modified 2004–05 «RS-on»
+    periodo: settembre 2004 – agosto 2005
+    colore: '#c0521c'
+    pagina: bilancio-2004
+    set_carte: ex9
+  f9:
+    nome: Modified 2005–06 «HL-on»
+    periodo: settembre 2005 – agosto 2006
+    colore: '#4b3c9e'
+    pagina: bilancio-2005
+    set_carte: ex13
+famiglie:
+  haymaker: Haymaker e i Pokémon Base aggressivi
+  raindance: Rain Dance e l'accelerazione Acqua
+  damageswap: Damage Swap e i muri
+  wiggly: Wigglytuff
+  aero: Aerodactyl
+  lock: I blocchi degli Allenatori
+  chaos: Chaos Gym
+  feraligatr: Feraligatr e Dark Feraligatr
+  fire: I motori Fuoco
+  kingdra: Kingdra
+  steelix: Steelix
+  muk: Muk e il blocco dei Poké-Power
+  ghost: Dark Gengar
+  bats: Crobat e i danni alla panchina
+  machamp: Machamp
+  grass: Meganium e i motori Erba
+  water04: Fase 2 Acqua dell'era EX
+  shiftry: Shiftry
+  exploud: Exploud
+  medicham: Medicham
+  psychic: Gardevoir e Mewtwo ex
+  metagross: Metagross
+  teams: Team Magma e Team Aqua
+  queen: Nidoqueen
+  birds: Uccelli leggendari
+  ttar: Dark Tyranitar
+  dark: I mazzi Buio del Team Rocket
+  ludi: LudiCargo e Magcargo
+  corners: Mazzi multitipo
+  sharpedo: Sharpedo ex
+  eevee: Eevee ed evoluzioni
+  mew: Mew ex
+  sunmoon: Lunatone e Solrock
+  arcanine: Arcanine ex
