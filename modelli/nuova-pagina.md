@@ -12,6 +12,8 @@ uscita: Maggio 2007              # solo per le pagine di tipo set
 carte: 130 carte                 # solo per le pagine di tipo set
 colore: '#3a6ea5'                # colore della pagina, tra apici
 set_carte: dp1                   # set da cui prendere le carte nelle anteprime (deve essere in sito.yml)
+# titolo_seo: Diamond & Pearl (2007): carte, mazzi e meta del GCC Pokémon   # facoltativo: titolo per Google
+# descrizione: Testo di circa 150 caratteri per i risultati di Google        # facoltativo
 ---
 
 Prima frase in evidenza: un paragrafo che riassume la pagina.

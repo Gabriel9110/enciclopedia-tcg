@@ -2,14 +2,16 @@
 # Dopo ogni modifica il sito si rigenera da solo (vedi LEGGIMI.md).
 
 titolo: Storia del GCC
+# Titolo della pagina iniziale nei risultati di Google.
+titolo_home: Storia del GCC – l'enciclopedia italiana del gioco di carte Pokémon
 descrizione: >-
   Enciclopedia in italiano del gioco di carte collezionabili Pokémon:
   set per set, mazzo per mazzo, dal Set Base del 1999 ai Mondiali del 2006.
 
 # Indirizzo pubblico del sito, senza barra finale.
 # Serve per la mappa del sito (sitemap.xml) e per le anteprime sui social.
-# Esempi: https://archiviogcc.it  oppure  https://tuonome.github.io/enciclopedia-tcg
-indirizzo: https://www.enciclopediadeltcg.com
+# Esempi: https://www.storiadelgcc.it  oppure  https://tuonome.github.io/enciclopedia-tcg
+indirizzo: https://www.storiadelgcc.it
 
 # Testo in fondo a ogni pagina.
 pie_di_pagina: >-

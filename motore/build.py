@@ -329,7 +329,7 @@ def pagina_mazzo(d):
 <p class="src">Lista e analisi complete nella pagina <a href="#{src}">del volume</a>.</p>'''
     body = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', body)
     return {'id': f'mazzo-{d["slug"]}', 'volume': 0, 'tipo': 'deck', 'titolo': d['nome'], 'occhiello': f'Mazzi · {fm["nome"]} · {fm["periodo"]}',
-            'colore': fm['colore'], 'set_carte': fm['set_carte'], '_lead': '', '_html': body, 'sottotitolo': '', '_desc': d['in_breve']}
+            'colore': fm['colore'], 'set_carte': fm['set_carte'], '_lead': '', '_html': body, 'sottotitolo': '', '_desc': d['in_breve'], '_periodo': fm['periodo']}
 
 
 def indice_mazzi():
@@ -446,6 +446,7 @@ def articolo(p, seq):
 
 def testo_puro(h, n=158):
     t = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h))).strip()
+    t = re.sub(r'\s+([.,;:!?)»])', r'\1', t)
     return t if len(t) <= n else t[:n].rsplit(' ', 1)[0] + '…'
 
 
@@ -472,8 +473,41 @@ def sistema_link(h, pre):
 CSS_VER = hashlib.md5(((ROOT / 'motore/style.css').read_text(encoding='utf-8') + (ROOT / 'motore/app.js').read_text(encoding='utf-8')).encode()).hexdigest()[:8]
 
 
+def anni(testo):
+    """'ottobre 2003 – settembre 2004' -> '2003–04'; '1999–2000' -> '1999–2000'; 'Gennaio 1999' -> '1999'."""
+    ys = re.findall(r'(?<!\d)(\d{4}|\d{2})(?!\d)', testo or '')
+    ys = [y for y in ys if len(y) == 4 or ys.index(y) > 0]
+    if not ys:
+        return ''
+    a, b = ys[0], ys[-1]
+    if len(a) != 4:
+        return ''
+    if a == b or b == a[2:]:
+        return a
+    return f'{a}–{b[-2:]}' if len(b) == 4 and b[:2] == a[:2] and a[:2] != '19' or (len(b) == 4 and b[:2] == a[:2] == '20') else f'{a}–{b}'
+
+
+def titolo_ricerca(p):
+    """Titolo per Google e per le schede del browser. Si può forzare con titolo_seo nell'intestazione."""
+    if p.get('titolo_seo'):
+        return p['titolo_seo']
+    t, k = p['titolo'], p['tipo']
+    if k == 'set':
+        y = anni(p.get('uscita'))
+        return f'{t} ({y}): carte, mazzi e meta del GCC Pokémon' if y else f'{t}: carte, mazzi e meta del GCC Pokémon'
+    if k == 'intro':
+        y = anni(p.get('occhiello'))
+        return f'{t}: la storia del GCC Pokémon {y}'.strip()
+    if k == 'deck':
+        y = anni(p.get('_periodo'))
+        return f'{t}: lista, strategia e matchup del mazzo Pokémon' + (f' del {y}' if y else '')
+    if k == 'decks':
+        return 'I mazzi iconici del GCC Pokémon (1999–2006): liste, strategie e matchup'
+    return f'{t} nel GCC Pokémon' if 'meta' in t.lower() or 'mazzi' in t.lower() or 'stagione' in t.lower() else f'{t} · GCC Pokémon'
+
+
 def documento(pid, titolo, desc, corpo, pre, cjson):
-    full = CFG['titolo'] if pid == 'home' else f'{titolo} · {CFG["titolo"]}'
+    full = (CFG.get('titolo_home') or CFG['titolo']) if pid == 'home' else f'{titolo} · {CFG["titolo"]}'
     url = CFG['indirizzo'].rstrip('/') + '/' + ('' if pid == 'home' else pid + '/')
     redir = ''
     if pid == 'home':
@@ -542,8 +576,8 @@ def main():
             if not p.get('_nolink'):
                 home_set = p['set_carte'] if p['tipo'] == 'set' else None
                 art = collega_carte(art, era_index(p['set_carte']), home_set, usate)
-            desc = p.get('_desc') or p.get('sottotitolo') or testo_puro(p.get('_lead') or p['_html'])
-            scrivi(f'{p["id"]}/index.html', documento(p['id'], p['titolo'], testo_puro(desc), sistema_link(art, '../'), '../', cards_json(usate)))
+            desc = p.get('descrizione') or p.get('_desc') or testo_puro(p.get('_lead') or '') or p.get('sottotitolo') or testo_puro(p['_html'])
+            scrivi(f'{p["id"]}/index.html', documento(p['id'], titolo_ricerca(p), testo_puro(desc), sistema_link(art, '../'), '../', cards_json(usate)))
 
     # 404, sitemap, robots
     nf = '<article class="page" style="--pc:#5b2a6e"><header class="a-head"><p class="a-kick">Errore 404</p><h1>Pagina non trovata</h1></header><div class="prose"><p>La pagina che cerchi non esiste o è stata spostata. <a href="#home">Torna all\'inizio</a> oppure usa l\'indice.</p></div></article>'

@@ -57,8 +57,7 @@ Serve alla mappa per Google e alla pagina di errore. Salva e pubblica (vedi Part
 4. Quando GitHub mostra il segno verde, spunta **Enforce HTTPS**.
 5. Aggiorna `indirizzo` in `sito.yml` con il nuovo dominio.
 
-Consiglio: scegli un nome tuo che non contenga "Pokémon" (vedi il documento sulla parte
-commerciale). Il titolo che compare sul sito si cambia in `sito.yml`, alla voce `titolo`.
+Il titolo che compare sul sito si cambia in `sito.yml`, alla voce `titolo`.
 
 ### 7. Facoltativo: farti trovare su Google
 Registra il sito su <https://search.google.com/search-console> e invia la mappa
@@ -110,6 +109,12 @@ resto del testo. Se non c'è, la pagina parte direttamente con il testo.
 2. Rinominala con un numero davanti: il numero decide l'ordine nell'indice
    (`03-...` viene dopo `02-...`). Puoi usare anche `02b-...` per inserire una pagina in mezzo.
 3. Compila l'intestazione tra le due righe `---` e scrivi il testo.
+
+### Titoli per Google
+Ogni pagina riceve da sola un titolo pensato per la ricerca, per esempio
+«EX Deoxys (2005): carte, mazzi e meta del GCC Pokémon · Storia del GCC».
+Per sceglierlo tu, aggiungi nell'intestazione `titolo_seo: ...`; per la frase che compare
+sotto il titolo nei risultati, `descrizione: ...` (circa 150 caratteri).
 
 ### Aggiungere un volume
 1. Crea una cartella in `contenuti/`, per esempio `contenuti/vol5/`.
